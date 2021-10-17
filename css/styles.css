@@ -779,6 +779,7 @@ body {
 }
 
 .feedback-link {
+  margin-left: 3px;
   color: var(--accent-color-text);
 }
 
@@ -792,14 +793,20 @@ body {
 
 .check-text {
   display: flex;
+  align-items: center;
 }
 
 .check-text span {
-  width: 15px;
-  height: 15px;
-  border: 1px solid var(--secondary-text-color);
-  border-radius: 3px;
-  display: block;
+  margin-right: 7px;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-image: url(../images/icon/check-border.svg);
+}
+
+.feedback-checkbox:checked + .check-text span {
+  background-repeat: no-repeat;
+  background-image: url(../images/icon/icon-check.svg);
 }
 
 .sabmit-btn {

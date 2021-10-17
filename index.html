@@ -372,27 +372,27 @@
             </div>
         </div>
     </footer>
-<div class="backdrop is-hidde" data-modal>
+<div class="backdrop is-hidden" data-modal>
     <div class="modal">
         <p class="feedback-title">Оставьте свои данные, мы вам перезвоним</p>
         <form action="#" class="feedback-form">
             <div class="feedback-field">
                 <label for="user-name" class="feedback-label">Имя</label>
-                <input type="text" name="user-name" id="user-name" class="user-input">
+                <input type="text" name="user-name" id="user-name" class="user-input" required>
                 <svg class="input-icon">
                     <use href="./images/icon/icon-defs.svg#icon-person"></use>
                 </svg>
             </div>
             <div class="feedback-field">
                 <label for="user-tel" class="feedback-label">Телефон</label>
-                <input type="tel" name="user-tel" id="user-tel" class="user-input">
+                <input type="tel" name="user-tel" id="user-tel" class="user-input" required>
                 <svg class="input-icon">
                     <use href="./images/icon/icon-defs.svg#icon-phone"></use>
                 </svg>
             </div>
             <div class="feedback-field">
                 <label for="user-email" class="feedback-label">Почта</label>
-                <input type="email" name="user-email" id="user-email" class="user-input">
+                <input type="email" name="user-email" id="user-email" class="user-input" required>
                 <svg class="input-icon">
                     <use href="./images/icon/icon-defs.svg#icon-email"></use>
                 </svg>
@@ -401,10 +401,10 @@
                 <label for="user-comment" class="feedback-label">Комментарий</label>
                 <textarea name="user-comment" id="user-comment" class="user-input comment" placeholder="Введите текст"></textarea>
             </div>
-            <input type="checkbox" id="feedback-checkbox" class="feedback-checkbox" >
+            <input type="checkbox" id="feedback-checkbox" class="feedback-checkbox backdrop is-hidden" required >
             <label for="feedback-checkbox" class="check-text">
-                <span></span>
-                Соглашаюсь с рассылкой и принимаю<a href="" class="feedback-link"> Условия договора</a></label>
+                <span class="check-check"></span>
+                Соглашаюсь с рассылкой и принимаю<a href="" class="feedback-link">Условия договора</a></label>
             <button type="submit" class="button sabmit-btn">Отправить</button>
         </form>
         <button type="button" class="close-btn" data-modal-close>
@@ -414,6 +414,6 @@
         </button>
     </div>
 </div>
-<!-- <script src="./js/modal.js"></script> -->
+<script src="./js/modal.js"></script>
 </body>
 </html>
