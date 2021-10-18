@@ -794,6 +794,8 @@ body {
 .check-text {
   display: flex;
   align-items: center;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .check-text span {
@@ -836,4 +838,8 @@ body {
 .close-icon {
   width: 18px;
   height: 18px;
+}
+.close-btn:focus .close-icon,
+.close-btn:hover .close-icon {
+  fill: var(--accent-color-text);
 }
